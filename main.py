@@ -1,7 +1,7 @@
 #Zheng Bok Chia
 #1673728
 
-print('Please enter all inputs in numerical formats only')
+print('Please enter all inputs in numerical formats only\n')
 current_day = int(input('Enter current day:'))
 current_month = int(input('Enter current month:'))
 current_year = int(input('Enter current year:'))
@@ -22,7 +22,9 @@ print('Birth day:', birth_day)
 print('Birth year:', birth_year, '\n')
 
 age = 0
-if (current_day >= birth_day) & (current_month >= birth_month):
+if current_month > birth_month:
+    age = (current_year - birth_year)
+elif (current_month >= birth_month) & (current_day >= birth_day):
     age = (current_year - birth_year)
 else:
     age = (current_year - birth_year - 1)
