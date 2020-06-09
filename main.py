@@ -10,6 +10,7 @@ print('\n')
 birth_month = int(input('Enter birth month:'))
 birth_day = int(input('Enter birth day:'))
 birth_year = int(input('Enter birth year:'))
+print('\n')
 
 print('Birthday Calculator\n')
 print('Current day:', current_day)
